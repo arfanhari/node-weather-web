@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App - {{titlePage}}</title>
+
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    </head>
+<body>
+    <div class="main-content"  >
+        {{>header}}
+        <form action="">
+            <input id="searchInput" type="text" placeholder="Input location here">
+        <button id="searchBtn">Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+
+    {{>footer}}
+
+    {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $('#searchBtn').click(function(){
+            if($.trim($('#searchInput').val()) == ''){
+                alert('Input can not be left blank');
+            }
+        });
+    </script> --}}
+    <script src="/js/app.js"></script>
+</body> 
+</html>
